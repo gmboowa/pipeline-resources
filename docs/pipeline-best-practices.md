@@ -59,12 +59,12 @@ Implementing workflow management systems in public health bioinformatics pipelin
 
 Additionally, the use of workflow management systems facilitates maintainability. The shared knowledge and use of these systems by a community of developers ensure that pipelines can be more readily supported and updated, significantly enhancing long-term usability and stability. Common workflow management systems adopted acorss public health pathogen genomics include [NextFlow](https://www.nextflow.io/), [WDL](https://openwdl.org/), [SnakeMake](https://snakemake.readthedocs.io/en/stable/), and [CWL](https://www.commonwl.org/). 
 
-**To adhere to this best practice:** Choose a workflow management system that supports scalability, is compatible with common bioinformatics tools, and integrates easily with existing infrastructure. Document the workflow configuration and dependencies clearly.
+**To adhere to this best practice:** Choose a workflow management system that supports scalability, is compatible with common bioinformatics tools, and integrates easily with existing infrastructure. Document the workflow configuration, versions, and dependencies clearly.
 
-**To verify adherence to this best practice:** The reviwer should assess the pipeline source code to identify the use of a workflow management system.
+**To verify adherence to this best practice:** The reviewer should assess the pipeline source code to identify the use of a workflow management system.
 
 ### 5. Containerized/Packaged Software
-_Does the pipeline utilize containerized (e.g. Docker) or packaging (e.g. conda) software software to enhance interoperable pipeline distribution?_ 
+_Does the pipeline utilize containerized (e.g. Docker) or packaging (e.g. conda) software to enhance interoperable pipeline distribution?_ 
 
 Using software packages and/or containerization within public health bioinformatics pipeline enhances interoperability by enabling seamless integration and deployment across different platforms and environments. This approach simplifies pipeline distribution and installation, promotes reproducibility, and facilitates collaboration among researchers, contributing to the development of more accessible and interoperable tools and resources.
 
@@ -76,9 +76,9 @@ Containers are essential for modern bioinformatics development and pipeline dist
 
 There should be a clear summary in the Git README pointing to which containerisation method has been chosen and instructions for how a lab can install this pipeline and/or where docker images are available, e.g. dockerhub and quay for containers; and where conda packages are available, e.g. anaconda and bioconda (cross-referenced with Installation Instructions). Documentation should indicate the specific version included in the pipeline. This is important as specific software versions  may impact functionality.
 
-**To adhear this best practice:** Implement pipeline components within Docker containers or distribute them as Conda packages; use of containerized/packaged software should be clearly documented.
+**To adhere to this best practice:** Implement pipeline components within Docker containers or distribute them as Conda packages; use of containerized/packaged software should be clearly documented.
 
-**To verify adherence to this best practice:** The reviewer should inspect the pipeline source code and review analyatical steps (e.g. NextFLow processes or WDL tasks) to ensure use of containerized or packaged softare and verify documentation of these resources.
+**To verify adherence to this best practice:** The reviewer should inspect the pipeline source code and review analyatical steps (e.g. NextFLow processes or WDL tasks) to ensure the use of containerized or packaged software and verify documentation of these resources.
 
 ### 6. Common File Formats
 _Does the pipeline accept as input and generate as output common file format utilized in public health pathogen genomics?_
